@@ -18,5 +18,9 @@ public class Evaluacion {
     @JoinColumn(name = "empleado_id")
     private Empleado empleado;
 
-// Getters y setters
+    public Empleado getEmpleado() {
+        return empleado;
+    }
+
+    // Getters y setters
 }
