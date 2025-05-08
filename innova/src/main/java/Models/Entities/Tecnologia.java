@@ -5,12 +5,13 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-public class Departamento {
+public class Tecnologia {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nombre;
+    private String version;
 
-    @OneToMany(mappedBy = "departamento")
-    private Set<Empleado> empleados = new HashSet<>();
+    @ManyToMany(mappedBy = "tecnologias")
+    private Set<Proyecto> proyectos = new HashSet<>();
 }

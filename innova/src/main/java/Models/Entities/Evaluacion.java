@@ -1,7 +1,6 @@
 package Models.Entities;
 
 import jakarta.persistence.*;
-
 import java.time.LocalDate;
 
 @Entity
@@ -9,7 +8,6 @@ public class Evaluacion {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private LocalDate fecha;
     private int puntaje;
     private String comentarios;
@@ -17,10 +15,4 @@ public class Evaluacion {
     @ManyToOne
     @JoinColumn(name = "empleado_id")
     private Empleado empleado;
-
-    public Empleado getEmpleado() {
-        return empleado;
-    }
-
-    // Getters y setters
 }
