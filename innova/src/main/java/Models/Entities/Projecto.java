@@ -6,7 +6,7 @@ import org.springframework.data.annotation.Id;
 import java.time.LocalDate;
 
 @Entity
-public class Project {
+public class Projecto {
     @jakarta.persistence.Id
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,7 +26,7 @@ public class Project {
 
     private String categoria;
 
-    public Project() {
+    public Projecto() {
 
     }
 
