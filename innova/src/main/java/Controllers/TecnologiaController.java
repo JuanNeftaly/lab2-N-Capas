@@ -1,5 +1,5 @@
 package Controllers;
-
+//
 import Models.Entities.Tecnologia;
 import Repositories.TecnologiaRepository;
 import org.springframework.beans.factory.annotation.Autowired;

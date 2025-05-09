@@ -1,5 +1,5 @@
 package Repositories;
-
+//
 import Models.Entities.Departamento;
 import org.springframework.data.jpa.repository.JpaRepository;
 
