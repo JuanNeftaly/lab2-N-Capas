@@ -13,4 +13,9 @@ public class Departamento {
 
     @OneToMany(mappedBy = "departamento")
     private Set<Empleado> empleados = new HashSet<>();
+
+    // Método getter para la relación empleados
+    public Set<Empleado> getEmpleados() {
+        return empleados;
+    }
 }

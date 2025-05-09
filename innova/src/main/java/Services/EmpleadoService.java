@@ -10,26 +10,21 @@ import java.util.Optional;
 
 @Service
 public class EmpleadoService {
-
     @Autowired
     private EmpleadoRepository empleadoRepository;
 
-    // Obtener todos los empleados
     public List<Empleado> getAllEmpleados() {
         return empleadoRepository.findAll();
     }
 
-    // Obtener un empleado por ID
     public Optional<Empleado> getEmpleadoById(Long id) {
         return empleadoRepository.findById(id);
     }
 
-    // Crear nuevo empleado
     public Empleado createEmpleado(Empleado empleado) {
         return empleadoRepository.save(empleado);
     }
 
-    // Actualizar un empleado
     public Optional<Empleado> updateEmpleado(Long id, Empleado empleadoDetails) {
         return empleadoRepository.findById(id).map(empleado -> {
             empleado.setNombre(empleadoDetails.getNombre());
@@ -42,7 +37,6 @@ public class EmpleadoService {
         });
     }
 
-    // Eliminar un empleado
     public boolean deleteEmpleado(Long id) {
         if (empleadoRepository.existsById(id)) {
             empleadoRepository.deleteById(id);
@@ -51,7 +45,6 @@ public class EmpleadoService {
         return false;
     }
 
-    // Asignar mentor a un empleado
     public Optional<Empleado> asignarMentor(Long empleadoId, Long mentorId) {
         Optional<Empleado> empleadoOpt = empleadoRepository.findById(empleadoId);
         Optional<Empleado> mentorOpt = empleadoRepository.findById(mentorId);
@@ -65,5 +58,4 @@ public class EmpleadoService {
         }
         return Optional.empty();
     }
-
 }

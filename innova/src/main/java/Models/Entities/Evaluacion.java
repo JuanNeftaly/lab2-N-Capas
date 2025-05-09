@@ -15,4 +15,14 @@ public class Evaluacion {
     @ManyToOne
     @JoinColumn(name = "empleado_id")
     private Empleado empleado;
+
+    // Método getter para la relación empleado
+    public Empleado getEmpleado() {
+        return empleado;
+    }
+
+    // Método setter para la relación empleado
+    public void setEmpleado(Empleado empleado) {
+        this.empleado = empleado;
+    }
 }
