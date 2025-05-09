@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f7297b5-63b2-439e-9fe1-ffed846fe098" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/innova/src/main/java/Controllers/DepartamentoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/innova/src/main/java/Controllers/DepartamentoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/innova/src/main/java/Controllers/EmpleadoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/innova/src/main/java/Controllers/EmpleadoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/innova/src/main/java/Controllers/EvaluacionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/innova/src/main/java/Controllers/EvaluacionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/innova/src/main/java/Services/DepartamentoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/innova/src/main/java/Services/DepartamentoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/innova/src/main/java/Services/EmpleadoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/innova/src/main/java/Services/EmpleadoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/innova/src/main/java/Services/EvaluacionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/innova/src/main/java/Services/EvaluacionService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +35,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "ft/Repository",
+    "git-widget-placeholder": "ft/Services",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "/home/adriel/Documentos/Proyectos/Labos-PNC/Labo-01",
     "node.js.detected.package.eslint": "true",
@@ -62,7 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1746665745847</updated>
       <workItem from="1746665749294" duration="83000" />
-      <workItem from="1746753915810" duration="5596000" />
+      <workItem from="1746753915810" duration="7228000" />
     </task>
     <servers />
   </component>
