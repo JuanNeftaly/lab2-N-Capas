@@ -12,12 +12,12 @@ import org.springframework.web.bind.annotation.*;
 public class DepartamentoController {
 
     @Autowired
-    private DepartamentoRepository departamentoRepository;
+    private DepartamentoService departamentoService;
 
-    //Get all deparments
+
     @GetMapping
     public List<Departamento> getAllDepartamentos() {
-        return departamentoRepository.findAll();
+        return departamentoService.getAllDepartamentos();
     }
 
     //Get department by id
@@ -28,49 +28,40 @@ public class DepartamentoController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
-    //Add new department
     @PostMapping
     public Departamento createDepartamento(@RequestBody Departamento departamento) {
-        return departamentoRepository.save(departamento);
+        return departamentoService.createDepartamento(departamento);
     }
+
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteDepartamento(@PathVariable Long id) {
-        if (departamentoRepository.existsById(id)) {
-            departamentoRepository.deleteById(id);
+        if (departamentoService.deleteDepartamento(id)) {
             return ResponseEntity.noContent().build();
         } else {
-            return ResponseEntity.notFound().build();
+            return ResponseEntity.badRequest().build(); // o notFound, según el caso
         }
     }
+
 
     @PostMapping("/{id}/empleados")
     public ResponseEntity<Empleado> agregarEmpleado(
             @PathVariable Long id,
-            @RequestBody Empleado nuevoEmpleado,
-            @Autowired EmpleadoRepository empleadoRepository) {
+            @RequestBody Empleado nuevoEmpleado) {
 
-        return departamentoRepository.findById(id).map(departamento -> {
-            nuevoEmpleado.setDepartamento(departamento);
-            Empleado guardado = empleadoRepository.save(nuevoEmpleado);
-            return ResponseEntity.ok(guardado);
-        }).orElse(ResponseEntity.notFound().build());
+        return departamentoService.agregarEmpleado(id, nuevoEmpleado)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
     }
 
     @PutMapping("/{id}/empleados/{empleadoId}/reasignar")
     public ResponseEntity<Empleado> reasignarEmpleado(
             @PathVariable Long id,
-            @PathVariable Long empleadoId,
-            @Autowired EmpleadoRepository empleadoRepository) {
+            @PathVariable Long empleadoId) {
 
-        return departamentoRepository.findById(id).map(nuevoDepto -> {
-            return empleadoRepository.findById(empleadoId).map(empleado -> {
-                empleado.setDepartamento(nuevoDepto);
-                Empleado actualizado = empleadoRepository.save(empleado);
-                return ResponseEntity.ok(actualizado);
-            }).orElse(ResponseEntity.notFound().build());
-        }).orElse(ResponseEntity.notFound().build());
+        return departamentoService.reasignarEmpleado(id, empleadoId)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
     }
-
 
 }

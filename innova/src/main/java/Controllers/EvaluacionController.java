@@ -16,53 +16,38 @@ import java.util.Optional;
 public class EvaluacionController {
 
     @Autowired
-    private EvaluacionRepository evaluacionRepository;
+    private EvaluacionService evaluacionService;
 
-    @Autowired
-    private EmpleadoRepository empleadoRepository;
-
-    // Obtener todas las evaluaciones
     @GetMapping
     public List<Evaluacion> getAllEvaluaciones() {
-        return evaluacionRepository.findAll();
+        return evaluacionService.getAllEvaluaciones();
     }
 
-    // Obtener una evaluación por ID
+
     @GetMapping("/{id}")
     public ResponseEntity<Evaluacion> getEvaluacionById(@PathVariable Long id) {
-        return evaluacionRepository.findById(id)
+        return evaluacionService.getEvaluacionById(id)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
 
-    // Obtener todas las evaluaciones de un empleado
+
     @GetMapping("/empleado/{empleadoId}")
     public ResponseEntity<List<Evaluacion>> getEvaluacionesByEmpleado(@PathVariable Long empleadoId) {
-        Optional<Empleado> empleadoOpt = empleadoRepository.findById(empleadoId);
-        if (empleadoOpt.isPresent()) {
-            Empleado empleado = empleadoOpt.get();
-            List<Evaluacion> evaluaciones = evaluacionRepository.findAll()
-                    .stream()
-                    .filter(e -> e.getEmpleado().getId().equals(empleado.getId()))
-                    .toList();
-            return ResponseEntity.ok(evaluaciones);
-        } else {
-            return ResponseEntity.notFound().build();
-        }
+        return evaluacionService.getEvaluacionesByEmpleadoId(empleadoId)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
     }
 
-    // Crear una evaluación para un empleado
+
     @PostMapping("/{empleadoId}")
     public ResponseEntity<Evaluacion> crearEvaluacion(
             @PathVariable Long empleadoId,
             @RequestBody Evaluacion evaluacion) {
 
-        Optional<Empleado> empleadoOpt = empleadoRepository.findById(empleadoId);
-        if (empleadoOpt.isPresent()) {
-            evaluacion.setEmpleado(empleadoOpt.get());
-            return ResponseEntity.ok(evaluacionRepository.save(evaluacion));
-        } else {
-            return ResponseEntity.notFound().build();
-        }
+        return evaluacionService.createEvaluacion(empleadoId, evaluacion)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
     }
+
 }

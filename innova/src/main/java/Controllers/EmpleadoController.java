@@ -14,62 +14,56 @@ import java.util.Optional;
 public class EmpleadoController {
 
     @Autowired
-    private EmpleadoRepository empleadoRepository;
+    private EmpleadoService empleadoService;
+
 
     @GetMapping
     public List<Empleado> getAllEmpleados() {
-        return empleadoRepository.findAll();
+        return empleadoService.getAllEmpleados();
     }
+
 
     @GetMapping("/{id}")
     public ResponseEntity<Empleado> getEmpleadoById(@PathVariable Long id) {
-        return empleadoRepository.findById(id)
+        return empleadoService.getEmpleadoById(id)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
 
+
     @PostMapping
     public Empleado createEmpleado(@RequestBody Empleado empleado) {
-        return empleadoRepository.save(empleado);
+        return empleadoService.createEmpleado(empleado);
     }
 
+
     @PutMapping("/{id}")
-    public ResponseEntity<Empleado> updateEmpleado(@PathVariable Long id, @RequestBody Empleado empleadoDetails) {
-        return empleadoRepository.findById(id).map(empleado -> {
-            empleado.setNombre(empleadoDetails.getNombre());
-            empleado.setApellido(empleadoDetails.getApellido());
-            empleado.setEmail(empleadoDetails.getEmail());
-            empleado.setFechaIngreso(empleadoDetails.getFechaIngreso());
-            empleado.setPuesto(empleadoDetails.getPuesto());
-            empleado.setDepartamento(empleadoDetails.getDepartamento());
-            return ResponseEntity.ok(empleadoRepository.save(empleado));
-        }).orElse(ResponseEntity.notFound().build());
+    public ResponseEntity<Empleado> updateEmpleado(
+            @PathVariable Long id,
+            @RequestBody Empleado empleadoDetails) {
+        return empleadoService.updateEmpleado(id, empleadoDetails)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
     }
+
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteEmpleado(@PathVariable Long id) {
-        if (empleadoRepository.existsById(id)) {
-            empleadoRepository.deleteById(id);
+        if (empleadoService.deleteEmpleado(id)) {
             return ResponseEntity.noContent().build();
         } else {
             return ResponseEntity.notFound().build();
         }
     }
 
-    @PutMapping("/{id}/mentor/{mentorId}")
-    public ResponseEntity<Empleado> asignarMentor(@PathVariable Long id, @PathVariable Long mentorId) {
-        Optional<Empleado> empleadoOpt = empleadoRepository.findById(id);
-        Optional<Empleado> mentorOpt = empleadoRepository.findById(mentorId);
 
-        if (empleadoOpt.isPresent() && mentorOpt.isPresent()) {
-            Empleado empleado = empleadoOpt.get();
-            Empleado mentor = mentorOpt.get();
-            empleado.getMentores().add(mentor);
-            return ResponseEntity.ok(empleadoRepository.save(empleado));
-        } else {
-            return ResponseEntity.notFound().build();
-        }
+    @PutMapping("/{id}/mentor/{mentorId}")
+    public ResponseEntity<Empleado> asignarMentor(
+            @PathVariable Long id,
+            @PathVariable Long mentorId) {
+        return empleadoService.asignarMentor(id, mentorId)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
     }
-}
 
 }
