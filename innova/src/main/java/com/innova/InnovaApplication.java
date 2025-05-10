@@ -1,5 +1,5 @@
 package com.innova;
-// oe
+// trainganle una falda a la niña :v
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
