@@ -1,8 +1,9 @@
-package Controllers;
+package com.innova.Controllers;
 //
-import Models.Entities.Departamento;
-import Models.Entities.Empleado;
-import Services.DepartamentoService;
+
+import com.innova.Models.Entities.Departamento;
+import com.innova.Models.Entities.Empleado;
+import com.innova.Services.DepartamentoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

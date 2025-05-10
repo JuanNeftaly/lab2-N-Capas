@@ -1,7 +1,7 @@
-package Controllers;
+package com.innova.Controllers;
 //
-import Models.Entities.Proyecto;
-import Repositories.ProyectoRepository;
+import com.innova.Models.Entities.Proyecto;
+import com.innova.Repositories.ProyectoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

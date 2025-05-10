@@ -1,7 +1,8 @@
-package Controllers;
+package com.innova.Controllers;
 //
-import Models.Entities.Evaluacion;
-import Services.EvaluacionService;
+
+import com.innova.Models.Entities.Evaluacion;
+import com.innova.Services.EvaluacionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

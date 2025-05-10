@@ -1,6 +1,6 @@
-package Repositories;
+package com.innova.Repositories;
 //
-import Models.Entities.Departamento;
+import com.innova.Models.Entities.Departamento;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface DepartamentoRepository extends JpaRepository<Departamento, Long> {}

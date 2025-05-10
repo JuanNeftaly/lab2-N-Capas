@@ -1,6 +1,6 @@
-package Repositories;
+package com.innova.Repositories;
 //
-import Models.Entities.Evaluacion;
+import com.innova.Models.Entities.Evaluacion;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface EvaluacionRepository extends JpaRepository<Evaluacion, Long> {}

@@ -1,7 +1,8 @@
-package Controllers;
+package com.innova.Controllers;
 //
-import Models.Entities.Empleado;
-import Services.EmpleadoService;
+
+import com.innova.Models.Entities.Empleado;
+import com.innova.Services.EmpleadoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

@@ -1,6 +1,7 @@
-package Repositories;
+package com.innova.Repositories;
 //
-import Models.Entities.Area;
+
+import com.innova.Models.Entities.Area;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface AreaRepository extends JpaRepository<Area, Long> {}

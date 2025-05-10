@@ -1,7 +1,7 @@
-package Controllers;
+package com.innova.Controllers;
 //
-import Models.Entities.Tecnologia;
-import Repositories.TecnologiaRepository;
+import com.innova.Models.Entities.Tecnologia;
+import com.innova.Repositories.TecnologiaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

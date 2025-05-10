@@ -1,7 +1,8 @@
-package Services;
+package com.innova.Services;
 //
-import Models.Entities.Proyecto;
-import Repositories.ProyectoRepository;
+
+import com.innova.Models.Entities.Proyecto;
+import com.innova.Repositories.ProyectoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

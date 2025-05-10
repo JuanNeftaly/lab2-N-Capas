@@ -1,7 +1,7 @@
-package Controllers;
+package com.innova.Controllers;
 //
-import Models.Entities.Capacitacion;
-import Repositories.CapacitacionRepository;
+import com.innova.Models.Entities.Capacitacion;
+import com.innova.Repositories.CapacitacionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
