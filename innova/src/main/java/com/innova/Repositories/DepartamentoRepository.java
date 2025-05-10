@@ -1,5 +1,5 @@
 package com.innova.Repositories;
-//
+///
 import com.innova.Models.Entities.Departamento;
 import org.springframework.data.jpa.repository.JpaRepository;
 
