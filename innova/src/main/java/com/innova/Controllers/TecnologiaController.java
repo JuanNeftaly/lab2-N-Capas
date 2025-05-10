@@ -1,5 +1,5 @@
 package com.innova.Controllers;
-//
+///
 import com.innova.Models.Entities.Tecnologia;
 import com.innova.Repositories.TecnologiaRepository;
 import org.springframework.beans.factory.annotation.Autowired;

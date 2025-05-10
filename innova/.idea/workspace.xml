@@ -4,82 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ff79bb7-b625-447e-911e-a0b78d625cf9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Controllers/AreaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Controllers/AreaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Controllers/CapacitacionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Controllers/CapacitacionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Controllers/CategoriaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Controllers/CategoriaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Controllers/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Controllers/ClienteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Controllers/DepartamentoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Controllers/DepartamentoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Controllers/EmpleadoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Controllers/EmpleadoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Controllers/EvaluacionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Controllers/EvaluacionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Controllers/ProyectoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Controllers/ProyectoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Controllers/TecnologiaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Controllers/TecnologiaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Models/Entities/Area.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Models/Entities/Area.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Models/Entities/Capacitacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Models/Entities/Capacitacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Models/Entities/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Models/Entities/Categoria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Models/Entities/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Models/Entities/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Models/Entities/Departamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Models/Entities/Departamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Models/Entities/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Models/Entities/Empleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Models/Entities/Evaluacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Models/Entities/Evaluacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Models/Entities/Proyecto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Models/Entities/Proyecto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Models/Entities/Tecnologia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Models/Entities/Tecnologia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Repositories/AreaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Repositories/AreaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Repositories/CapacitacionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Repositories/CapacitacionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Repositories/CategoriaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Repositories/CategoriaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Repositories/ClienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Repositories/ClienteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Repositories/DepartamentoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Repositories/DepartamentoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Repositories/EmpleadoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Repositories/EmpleadoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Repositories/EvaluacionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Repositories/EvaluacionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Repositories/ProyectoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Repositories/ProyectoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Repositories/TecnologiaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Repositories/TecnologiaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Services/AreaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Services/AreaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Services/CapacitacionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Services/CapacitacionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Services/CategoriaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Services/CategoriaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Services/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Services/ClienteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Services/DepartamentoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Services/DepartamentoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Services/EmpleadoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Services/EmpleadoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Services/EvaluacionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Services/EvaluacionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Services/ProyectoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Services/ProyectoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/innova/Services/TecnologiaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/innova/Services/TecnologiaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controllers/AreaController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controllers/CapacitacionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controllers/CategoriaController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controllers/ClienteController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controllers/DepartamentoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controllers/EmpleadoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controllers/EvaluacionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controllers/ProyectoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controllers/TecnologiaController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Models/Entities/Area.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Models/Entities/Capacitacion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Models/Entities/Categoria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Models/Entities/Cliente.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Models/Entities/Departamento.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Models/Entities/Empleado.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Models/Entities/Evaluacion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Models/Entities/Proyecto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Models/Entities/Tecnologia.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Repositories/AreaRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Repositories/CapacitacionRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Repositories/CategoriaRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Repositories/ClienteRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Repositories/DepartamentoRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Repositories/EmpleadoRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Repositories/EvaluacionRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Repositories/ProyectoRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Repositories/TecnologiaRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Services/AreaService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Services/CapacitacionService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Services/CategoriaService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Services/ClienteService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Services/DepartamentoService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Services/EmpleadoService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Services/EvaluacionService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Services/ProyectoService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Services/TecnologiaService.class" beforeDir="false" />
-    </list>
+    <list default="true" id="8ff79bb7-b625-447e-911e-a0b78d625cf9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -154,7 +79,7 @@
       <workItem from="1746774433506" duration="52000" />
       <workItem from="1746822090839" duration="17000" />
       <workItem from="1746822133804" duration="390000" />
-      <workItem from="1746832503915" duration="3022000" />
+      <workItem from="1746832503915" duration="3317000" />
     </task>
     <servers />
   </component>

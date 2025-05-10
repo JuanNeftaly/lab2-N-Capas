@@ -1,5 +1,5 @@
 package com.innova.Controllers;
-//
+///
 import com.innova.Models.Entities.Capacitacion;
 import com.innova.Repositories.CapacitacionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
